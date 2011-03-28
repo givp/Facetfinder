@@ -7,7 +7,6 @@ First make sure you have entered your BING & Flickr API keys in Facetfinder.py
 
 	from Facetfinder import Facetfinder
 
-
 	ff = Facetfinder()
 
 	items = ff.get_blogs('textile')
