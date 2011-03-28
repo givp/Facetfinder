@@ -18,7 +18,7 @@
 #
 from bingapi import bingapi
 import flickr
-import urllib2, logging
+import urllib2
 import simplejson as json
 import feedparser
 import gdata.youtube
