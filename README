@@ -1,7 +1,9 @@
 Facetfinder
+=============
 
-# Usage:
-# First make sure you have entered your BING & Flickr API keys in Facetfinder.py
+First make sure you have entered your BING & Flickr API keys in Facetfinder.py
+
+### Usage:
 
 from Facetfinder import Facetfinder
 
