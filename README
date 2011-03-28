@@ -1,6 +1,7 @@
 Facetfinder
 
 # Usage:
+# First make sure you have entered your BING & Flickr API keys in Facetfinder.py
 
 from Facetfinder import Facetfinder
 
@@ -16,7 +17,7 @@ for i in items:
 	print i.keyword
 
 # Available methods:
-get_flickr(keyword)
+get_flickr(keyword) #flickr is VERY slow
 get_twitter(keyword)
 get_youtube(keyword)
 get_news(keyword)

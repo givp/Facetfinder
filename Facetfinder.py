@@ -24,6 +24,17 @@ import feedparser
 import gdata.youtube
 import gdata.youtube.service
 
+# set BING API key
+BING_KEY = ''
+
+# set Flickr API key/secret
+flickr.API_KEY = ''
+flickr.API_SECRET = ''
+
+
+########################################################################
+# Main
+########################################################################
 class Item():
     """ Main item model """
     
@@ -43,9 +54,15 @@ class Facetfinder():
     """ Main search class for managing aggregation methods """
     
     all_data = []
-
+    
     def get_flickr(self, keyword):
         """ search Flickr for keyword """
+        
+        if (flickr.API_KEY == ''):
+            raise Exception('Flickr API key not set')
+            
+        if (flickr.API_SECRET == ''):
+            raise Exception('Bing API secret not set')  
         
         photos = flickr.photos_search(text=keyword, per_page=20)
         urls = []
@@ -111,7 +128,10 @@ class Facetfinder():
     def get_news(self, keyword):
         """ search Bing News """  
         
-        bing = bingapi.Bing('786BCC76A29DE01D2BEF754804CE44595E34CC13')
+        if (BING_KEY == ''):
+            raise Exception('Bing API key not set')
+        
+        bing = bingapi.Bing(BING_KEY)
         newResults = bing.do_news_search(keyword.replace('_', ' ').lower())
         
         newsResultsData = newResults['SearchResponse']['News']['Results']
