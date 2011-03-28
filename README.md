@@ -7,7 +7,7 @@ Facetfinder is a series of wrappers for different search APIs:
 - Youtube
 - Bing news search
 - Google blog search
-- Delecious tag search
+- Delicious tag search
 
 This repository included the flickr, gdata and feedparse module but you should
 probably move them to your modules directory
@@ -30,9 +30,9 @@ Make sure you have entered your BING & Flickr API keys in Facetfinder.py
 
 ### Available methods:
 
-	- get_flickr(keyword) #flickr is VERY slow
-	- get_twitter(keyword)
-	- get_youtube(keyword)
-	- get_news(keyword)
-	- get_blogs(keyword)
-	- get_delicious(keyword)
+- get_flickr(keyword) #flickr is VERY slow
+- get_twitter(keyword)
+- get_youtube(keyword)
+- get_news(keyword)
+- get_blogs(keyword)
+- get_delicious(keyword)
