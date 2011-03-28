@@ -1,0 +1,21 @@
+Facetfinder
+
+# Usage:
+
+from Facetfinder import Facetfinder
+
+
+ff = Facetfinder()
+
+items = ff.get_blogs('textile')
+
+for i in items:
+  print i.url
+
+# Available methods:
+get_flickr(keyword)
+get_twitter(keyword)
+get_youtube(keyword)
+get_news(keyword)
+get_blogs(keyword)
+get_delicious(keyword)
