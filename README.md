@@ -1,7 +1,18 @@
 Facetfinder
 =============
+Facetfinder is a series of wrappers for different search APIs:
 
-First make sure you have entered your BING & Flickr API keys in Facetfinder.py
+- Flickr image search
+- Twitter
+- Youtube
+- Bing news search
+- Google blog search
+- Delecious tag search
+
+This repository included the flickr, gdata and feedparse module but you should
+probably move them to your modules directory
+
+Make sure you have entered your BING & Flickr API keys in Facetfinder.py
 
 ### Usage:
 
