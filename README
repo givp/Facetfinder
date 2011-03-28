@@ -10,7 +10,10 @@ ff = Facetfinder()
 items = ff.get_blogs('textile')
 
 for i in items:
-  print i.url
+	print i.url
+	print i.title
+	print i.source
+	print i.keyword
 
 # Available methods:
 get_flickr(keyword)

@@ -9,16 +9,18 @@
 # ff = Facetfinder()
 # items = ff.get_blogs('textile')
 #
-# for i in items:
-#   print i.url
+#for i in items:
+#	print i.url
+#	print i.title
+#	print i.source
+#	print i.keyword
 #
 #
 from bingapi import bingapi
 import flickr
-import sys, datetime, pprint, urllib2
+import urllib2, logging
 import simplejson as json
 import feedparser
-import logging
 import gdata.youtube
 import gdata.youtube.service
 
