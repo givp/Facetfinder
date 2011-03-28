@@ -80,7 +80,6 @@ class Facetfinder():
     def get_twitter(self, keyword):
         """ search Twitter for keyword """
         
-        kw1 = urllib2.quote(keyword)
         search_url = "http://search.twitter.com/search.json?q=%s&lang=en" % (keyword)
         twitterResult = urllib2.urlopen(search_url)
         
