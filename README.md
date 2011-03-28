@@ -9,8 +9,8 @@ Facetfinder is a series of wrappers for different search APIs:
 - Google blog search
 - Delicious tag search
 
-This repository included the flickr, gdata and feedparse module but you should
-probably move them to your modules directory
+This repository includes the flickr, gdata and feedparser modules but you should
+probably move them to your modules directory.
 
 Make sure you have entered your BING & Flickr API keys in Facetfinder.py
 
