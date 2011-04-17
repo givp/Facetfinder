@@ -55,6 +55,11 @@ class Facetfinder():
     
     all_data = []
     
+    def strip_tags(self, value):
+        """ Return the given HTML with all tags stripped """
+        
+        return re.sub(r'<[^>]*?>', '', value)
+    
     def get_flickr(self, keyword):
         """ search Flickr for keyword """
         
@@ -151,7 +156,7 @@ class Facetfinder():
         blogData = feedparser.parse(blogResult.read())
             
         for entry in blogData['entries']:
-            i = Item(title=entry['title'], url=entry['link'], source='blogs', keyword=keyword)
+            i = Item(title=self.strip_tags(entry['title']), url=entry['link'], source='blogs', keyword=keyword)
             self.all_data.append(i)
         
         return self.all_data
